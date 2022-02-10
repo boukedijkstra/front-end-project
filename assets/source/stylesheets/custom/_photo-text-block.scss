@@ -1,0 +1,52 @@
+.photo-text-block {
+  max-width: 1064px;
+  padding: 0 20px;
+  margin: auto;
+  @include fluid-type(margin-bottom,320px,1440px,30px,80px);
+  @include fluid-type(margin-top,320px,1440px,20px,80px);
+  display: flex;
+  justify-content: space-between;
+
+  &__image-container {
+    width: 50%;
+    max-width: 512px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text-container {
+    width: 45%;
+    line-height: 1.6;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    margin-bottom: 20px;
+  }
+
+  @include media-phone-small {
+    flex-direction: column;
+    &__image-container {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__text-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+}

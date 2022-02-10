@@ -1,0 +1,92 @@
+@font-face {
+  font-family: GildaDisplayRegular;
+  src: url('/assets/source/fonts/GildaDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: MSMincho;
+  src: url('/assets/source/fonts/MS_Mincho.ttf');
+}
+
+@font-face {
+  font-family: NetflixSans;
+  src: url('/assets/source/fonts/NetflixSans_Bd.ttf');
+}
+
+@font-face {
+  font-family: NetflixSans;
+  src: url('/assets/source/fonts/NetflixSans_Lt.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: NetflixSans;
+  src: url('/assets/source/fonts/NetflixSans_Md.ttf');
+}
+
+@font-face {
+  font-family: PalanquinDarkRegular;
+  src: url('/assets/source/fonts/PalanquinDark-Regular.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: PlayfairDisplayBold;
+  src: url('/assets/source/fonts/PlayfairDisplay-Bold.ttf');
+}
+
+
+
+@mixin font-light {
+  font-family: NetflixSans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-regular {
+  font-family: NetflixSans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin header {
+  font-family: PalanquinDarkRegular, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin header-gilda {
+  font-family: GildaDisplayRegular, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-size-regular{
+  @include fluid-type(font-size,320px,1440px,14px,16px);
+}
+
+@mixin font-size-regular-shrink{
+  @include fluid-type(font-size,320px,1440px,11px,16px);
+}
+
+@mixin font-size-small{
+  @include fluid-type(font-size,320px,1440px,11px,14px);
+}
+
+@mixin font-size-medium{
+  @include fluid-type(font-size,320px,1440px,20px,24px);
+}
+
+@mixin font-size-grow{
+  @include fluid-type(font-size,320px,1440px,14px,10px);
+}
+
+@mixin font-size-grow-small{
+  @include fluid-type(font-size,320px,1440px,12px,10px);
+}
+
+@mixin font-size-header {
+  @include fluid-type(font-size,320px,1440px,22px,36px);
+}
+
+

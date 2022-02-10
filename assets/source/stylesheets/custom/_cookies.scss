@@ -1,0 +1,28 @@
+.cookies {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  max-width: 440px;
+  padding: 24px;
+  background-color: $color-pink-dark;
+  color: $color-white;
+  z-index: 100;
+
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin-bottom: 22px;
+  }
+
+  #close-cookies {
+    float: right;
+    cursor: pointer;
+  }
+
+  @include media-phone-small {
+    left: 0;
+    right: 0;
+  }
+}

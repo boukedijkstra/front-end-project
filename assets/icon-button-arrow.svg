@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15" height="12" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pijltje</title>
+    <g id="SRB-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Header1" transform="translate(-1297.000000, -1075.000000)" stroke="#CC726B">
+            <g id="Selling-points" transform="translate(-192.000000, 900.000000)">
+                <g id="Desktop/Button" transform="translate(1420.000000, 176.000000)">
+                    <g id="Pijltje" transform="translate(69.500000, 0.500000)">
+                        <line x1="0" y1="4.5" x2="12.5" y2="4.5" id="Line"></line>
+                        <polyline id="Arrow" transform="translate(10.000000, 4.642365) scale(-1, 1) rotate(90.000000) translate(-10.000000, -4.642365) " points="5.5 2.1423652 10 7.1423652 14.5 2.1423652"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

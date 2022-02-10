@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Star</title>
+    <g id="SRB-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Header1" transform="translate(-1124.000000, -3396.000000)" fill="#FFFFFF">
+            <g id="Desktop/Reviews" transform="translate(0.000000, 3282.000000)">
+                <g id="Review2" transform="translate(1028.000000, 110.000000)">
+                    <g id="Stars" transform="translate(24.000000, 4.000000)">
+                        <polygon id="Star" points="78.5 9.75 74.6793959 11.7586105 75.4090663 7.50430523 72.3181326 4.49138954 76.5896979 3.87069477 78.5 0 80.4103021 3.87069477 84.6818674 4.49138954 81.5909337 7.50430523 82.3206041 11.7586105"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

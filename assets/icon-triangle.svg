@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Triangle</title>
+    <g id="SRB-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page" transform="translate(-814.000000, -609.000000)" fill="#CC726B">
+            <g id="Single-Product" transform="translate(208.000000, 230.000000)">
+                <g id="Labels-(eco)" transform="translate(606.000000, 377.000000)">
+                    <polygon id="Triangle" transform="translate(4.500000, 8.000000) rotate(90.000000) translate(-4.500000, -8.000000) " points="4.5 4 10 12 -1 12"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

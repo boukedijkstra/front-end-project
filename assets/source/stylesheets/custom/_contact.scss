@@ -1,0 +1,10 @@
+.contact-form {
+  max-width: 640px;
+  margin: auto;
+  background-color: $color-pink-light;
+  @include fluid-type(padding,320px,1440px,20px,40px);
+
+  &__header {
+    margin-bottom: 40px;
+  }
+}

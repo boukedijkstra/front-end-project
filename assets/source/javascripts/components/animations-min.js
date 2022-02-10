@@ -1,0 +1,1 @@
+const animations=()=>({init:()=>{}});export default{init:()=>{}};

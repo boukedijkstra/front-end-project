@@ -1,0 +1,120 @@
+.form-styling__newsletter {
+  form {
+    width: 100%;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea{
+      border: 0;
+      border-bottom: $color-grey 1px solid;
+      border-radius: 0;
+      padding: 5px 5px 5px 0;
+      margin-right: 9px;
+      width: 200px;
+
+      @include font-regular;
+      color: $color-grey-dark;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+
+      @include placeholder {
+        @include font-regular;
+        color: $color-grey;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+
+    input[type="submit"] {
+      border: 0;
+      border-bottom: $color-pink-dark 2px solid;
+      border-radius: 0;
+      padding: 5px 0;
+      background-color: transparent;
+      @include font-regular;
+      color: $color-pink-dark;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      &:hover {
+        color: $color-grey;
+        border-bottom: $color-grey 2px solid;
+      }
+    }
+  }
+}
+
+.form-styling__contact {
+  form {
+    width: 100%;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px 20px;
+      @include fluid-type(padding-top padding-bottom,320px,1440px,10px,13px);
+      margin-bottom: 28px;
+      border: 0;
+      border-radius: 0;
+      background-color: $color-white;
+      outline: 0;
+
+      @include font-light;
+      @include fluid-type(font-size,320px,1440px,13px,15px);
+      letter-spacing: .5px;
+
+      @include placeholder {
+        @include font-light;
+        color: $color-grey;
+        @include fluid-type(font-size,320px,1440px,13px,15px);
+        letter-spacing: .5px;
+      }
+
+      &[required]:focus:invalid {
+        border: solid 1px $color-pink-dark;
+        background-image: url("/assets/icon-cross.svg");   /* Add custom arrow */
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+
+      &[required]:valid {
+        background-image: url("/assets/icon-tick.svg");   /* Add custom arrow */
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+    }
+
+    select {
+      width: unset;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;       /* Remove default arrow */
+      background-image: url("/assets/icon-dropdown.svg");   /* Add custom arrow */
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    input[type="submit"] {
+      padding: 12px 75px;
+      border-radius: 0;
+    }
+
+    textarea {
+      &[required]:focus:valid {
+        background-position: right 16px top 16px;
+      }
+      &[required]:focus:invalid {
+        background-position: right 16px top 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.top-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: $color-pink-light;
+  padding: 12px 20px;
+
+  &__item {
+    @include fluid-type(padding-right,320px,1440px,5px,20px);
+    color: $color-pink-dark;
+    &:before {
+      content: url("/assets/icon-tick.svg");
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
+
+  #close-top-bar {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  @include media-phone {
+
+    justify-content: space-around;
+
+    &__item {
+      &:before {
+        content: url("/assets/icon-tick--small.svg");
+      }
+    }
+
+
+  }
+
+  @include media-phone-small {
+    #close-top-bar {
+      right: 6px;
+      top: 8px;
+    }
+    :nth-child(n+4) {
+      display: none;
+    }
+  }
+}

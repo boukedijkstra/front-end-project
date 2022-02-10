@@ -1,0 +1,39 @@
+.instagram {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: auto;
+
+  &__header {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+
+  &__photo-container {
+    display: flex;
+    justify-content: space-between ;
+  }
+
+  &__photo {
+    width: 25%;
+    padding: 0 5px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @include media-phone {
+    &__photo {
+      width: calc(100% / 3);
+    }
+    :nth-child(n+4) {
+      display: none;
+    }
+  }
+}

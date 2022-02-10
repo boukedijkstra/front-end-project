@@ -1,0 +1,91 @@
+// Desktop first breakpoints
+
+@mixin media-large-screen {
+  @media screen and (max-width: #{$media-large-screen}) {
+    @content;
+  }
+}
+
+@mixin media-tablet-landscape {
+  @media screen and (max-width: #{$media-tablet-landscape}) {
+    @content;
+  }
+}
+
+@mixin media-phone {
+  @media screen and (max-width: #{$media-phone}) {
+    @content;
+  }
+}
+
+@mixin media-phone-small {
+  @media screen and (max-width: #{$media-phone-small}) {
+    @content;
+  }
+}
+
+@mixin media-phone-x-small {
+  @media screen and (max-width: #{$media-phone-x-small}) {
+    @content;
+  }
+}
+
+// Default transition with the option to adjust when needed.
+
+@mixin transition($element: all, $speed: $transition-speed, $ease: $transition-easing) {
+  transition: $element $speed $ease;
+}
+
+// Style placeholders
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+// Fluid font https://www.sassmeister.com/gist/7f22e44ace49b5124eec
+
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @media (min-width: $min-vw) {
+    @each $property in $properties {
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+    }
+  }
+
+  @media (min-width: $max-vw) {
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+  }
+}
+
+@function strip-unit($number) {
+  @if type-of($number)=="number"and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

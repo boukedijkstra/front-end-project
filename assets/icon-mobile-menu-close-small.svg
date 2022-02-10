@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>kruisje</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Mobile/Menu-Open" transform="translate(-293.000000, -128.000000)" stroke="#000000">
+            <g id="kruisje" transform="translate(294.000000, 129.000000)">
+                <line x1="-2.84217094e-14" y1="6.11288424e-14" x2="7.54247233" y2="7.54247233" id="Line"></line>
+                <line x1="7.79820652e-13" y1="-4.32369092e-13" x2="7.54247233" y2="7.54247233" id="Line" transform="translate(3.771236, 3.771236) rotate(-90.000000) translate(-3.771236, -3.771236) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

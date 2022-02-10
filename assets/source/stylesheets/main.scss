@@ -1,0 +1,59 @@
+/*! 
+    Theme Name: Surf&Turf Theme 
+    Description: by Surf&Turf
+    Version: 1.0
+    Author: Surf&Turf
+    Author URI: http://www.surfturf.digital/ 
+*/
+
+// First we reset the pesky browser styling and make everything behave nicely across all the browsers.
+@import 'vendor/reset';
+
+// Then we set the global variables. Think of colours and breakpoints.
+@import 'custom/variables';
+
+// We use the variables to define our mixins.
+@import 'custom/mixins';
+
+// Load in the fonts.
+@import 'custom/fonts';
+@import 'custom/typography';
+
+// External dependicies EXAMPLE
+//@import '/html/javascripts/node_modules/owl.carousel/dist/assets/owl.carousel.css';
+
+// Start your engines
+@import 'custom/general';
+@import 'custom/buttons';
+@import 'custom/form';
+@import 'custom/cookies';
+@import 'custom/chat';
+@import 'custom/top-bar';
+@import 'custom/header';
+@import 'custom/hero';
+@import 'custom/button-block';
+@import 'custom/product';
+@import 'custom/about-block';
+@import 'custom/blog-block';
+@import 'custom/instagram';
+@import 'custom/blogs';
+@import 'custom/featured';
+@import 'custom/testimonials';
+@import 'custom/product-page';
+@import 'custom/cart-added';
+@import 'custom/cart';
+@import 'custom/faq';
+@import 'custom/page';
+@import 'custom/contact';
+@import 'custom/search';
+@import 'custom/press';
+@import 'custom/photo-text-block';
+@import 'custom/collection';
+
+@import 'custom/suggested';
+@import 'custom/footer';
+
+
+@import '../javascripts/node_modules/slick-carousel/slick/slick';
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.3/simplelightbox.min.css';

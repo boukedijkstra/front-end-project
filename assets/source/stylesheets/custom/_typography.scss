@@ -1,0 +1,77 @@
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.link {
+  text-decoration: underline;
+}
+
+a.link-pink {
+  text-decoration: underline;
+  color: $color-pink-dark;
+  &:hover {
+    color: darken($color-pink-dark, 10%);
+  }
+}
+
+.text-highlighted {
+  color: $color-pink-dark;
+  font-family: GildaDisplayRegular, sans-serif;
+  @include fluid-type(font-size,320px,1440px,16px,21px);
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  border-left: solid 1px $color-pink-dark;
+  padding-left: 24px;
+}
+
+.paragraph-small {
+  @include font-light;
+  @include font-size-small;
+}
+
+.paragraph-regular {
+  @include font-light;
+  @include font-size-regular;
+}
+
+.paragraph-regular-shrink {
+  @include font-light;
+  @include font-size-regular-shrink;
+}
+
+.header-small {
+  @include header;
+  @include font-size-regular;
+}
+
+.header-medium {
+  @include header;
+  @include font-size-medium;
+}
+
+.header-large {
+  @include header;
+  @include font-size-header;
+}
+
+.header--center {
+  text-align: center;
+}
+
+.header-gilda {
+  @include header-gilda;
+  font-size: 26px;
+}
+
+.text-grey {
+  color: $color-grey !important;
+}
+
+.text-pink-dark {
+  color: $color-pink-dark !important;
+}
+
+.text-centered {
+  text-align: center;
+}

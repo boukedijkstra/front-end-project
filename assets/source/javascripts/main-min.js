@@ -1,0 +1,1 @@
+import SmoothScroll from"smoothscroll-for-websites";const loadPage=()=>{};document.addEventListener("DOMContentLoaded",loadPage);
